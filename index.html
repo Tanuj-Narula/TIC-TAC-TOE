@@ -5,20 +5,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tic tac toe</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
-        <h1>TIC TAC TOE</h1>
+        <h1 class="name">TIC TAC TOE</h1>
+        <br>
+
+        <p id="name">Select Game Mode</p>
         <div class="mainContainer">
             <div class="imagesContainer">
                 <div class="Image playerVsPlayer"></div>
                 <div class="Image vsComputer"></div>
             </div>
             <div class="buttons gameMode">
-                <button onclick="location.href='2player.html'" class="clickable">Player vs Player</button>
-                <button onclick="location.href='vsComputer.html'" class="clickable">Player vs Computer</button>
+                <button onclick="location.href='2player.html'" class="clickable gameModeButton"><i class="fa-solid fa-gamepad"></i> Player vs Player <i class="fa-solid fa-gamepad"></i></button>
+                <button onclick="location.href='vsComputer.html'" class="clickable gameModeButton"><i class="fa-solid fa-gamepad"></i> Player vs Computer <i class="fa-solid fa-robot"></i></button>
             </div>
         </div>
     </main>
+    
+    <footer>
+        <div class="footerPanel">
+            <div class="madeBy">Made by Tanuj Narula</div>
+            <div class="footerAnchor"><a href="https://www.linkedin.com/in/tanuj-narula" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedIn</a></div>
+            <div class="footerAnchor"><a href="https://github.com/Tanuj-Narula" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+    </footer>
 </body>
 </html>

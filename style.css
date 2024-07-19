@@ -4,16 +4,28 @@
 }
 
 body{
-    background-color: #FF9B71;
+    background-color: #3F88C5;
     text-align: center;
 }
+body:hover{
+    cursor: default;
+}
 
-h1{
+.name{
+    font-size: 6rem;
+    text-shadow: 3px 3px 0.2rem #3B413C; 
+    color: #000000d9;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+#name{
+    font-size: 3rem;
+    text-shadow: 3px 3px 0.2rem #3B413C; 
+    color: #000000d9;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
 }
 
 .mainContainer{
-    height: 70vh;
+    height: 50vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -25,7 +37,7 @@ h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 12rem;
+    column-gap: 17rem;
 }
 
 .Image{
@@ -45,7 +57,7 @@ h1{
 }
 
 .container {
-    height: 67vh;
+    height: 65vh;
     display: flex;
     justify-content: center;
     align-items:center;
@@ -58,19 +70,19 @@ h1{
     flex-wrap: wrap;
     justify-content: center;
     align-items:center;
-    gap: 1.5vmin;
+    gap: 1vmin;
 }
 
 #box {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFFD82;
+    background-color: #ffd15b;
     color: #3B413C;
-    height: 18vmin;
-    width: 18vmin;
+    height: 19vmin;
+    width: 19vmin;
     border-radius: 1rem;
-    font-size: 8vmin;
+    font-size: 10vmin;
     font-weight:lighter;
     font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     border: none;
@@ -86,15 +98,15 @@ h1{
     justify-content: center;
     align-items: center;
     gap: 10rem;
-    margin-top: 1rem;
+    /* margin-top: 0.5rem; */
 }
 
 .clickable{
     background-color: #C9DDFF;
     font-weight: bold;
     border: none;
-    padding: 1rem;
-    font-size: 1.5rem;
+    padding: 0.8rem;
+    font-size: 1.6rem;
     border-radius: 1rem;
 }
 
@@ -112,24 +124,120 @@ h1{
 .showWinner{
     border-radius: 0.5rem;
     display: inline;
-    font-size: 4.5vmin;
+    font-size: 3.8vmin;
     font-weight:500;
     font-family:Georgia, 'Times New Roman', Times, serif;
     padding: 0.5rem;
 }
 
 .scoreBoard{
+    color: black;
     margin: 1rem;
     display: flex;
     justify-content: center;
     align-items: center ;
     gap: 1rem;
     column-gap: 10rem;
-    font-size: 1.5rem;
-    font-weight:500;
+    font-size: 1.6rem;
 }
 
 .hide{
     display: none;
 }
 
+.footerPanel{
+    position: absolute;
+    bottom: 0; 
+    background-color: #ffd15b; 
+    opacity: 85%;
+    height: 12vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #141514;
+    font-weight: 800;
+}
+
+.footerAnchor a{
+    text-decoration: none;
+    color: #141514;
+}
+
+.footerAnchor:hover{
+    text-decoration: underline ;
+    cursor: pointer;
+}
+
+
+@media (min-width: 550px){
+    .footerHide{
+        display: none;
+    }
+}
+@media (max-width: 550px) {
+    .name{
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+    #name{
+        font-size: 1.5rem;
+
+    }
+    .imagesContainer {
+        gap: 5rem;
+    }
+    .Image {
+        width: 7rem;
+        height: 7rem;
+        margin: 10px ;
+    }
+    .gameMode {
+        width: 90%;
+        gap: 5rem;
+    }
+    .gameModeButton {
+        padding: 0.5rem;
+        font-size: 1rem;
+    }
+    .container{
+        height: 60vh;
+    }
+    .board{
+        height: 80vmin;
+        width: 80vmin;
+        gap: 0.rem;
+    }
+    #box{
+        height: 25vmin;
+        width: 25vmin;
+        font-size: 15vmin;
+    }
+    .showWinner{
+        font-size: 8vmin;
+    }
+    .scoreBoard{
+        column-gap: 5rem;
+        margin-top: 1.5rem;
+    }
+    .playerVsPlayerButton {
+        column-gap: 1.3rem ;
+        margin-top: 1.5rem ;
+    }
+    .playerVsPlayerButton button{
+        font-size: 1rem;
+    }
+    .vsComputerButton{
+        column-gap: 1.3rem ;
+        margin-top: 1.5rem ;
+    }
+    .vsComputerButton button{
+        font-size: 1rem;
+    }
+    .footerHide{
+        height: 8vh;
+        font-size: 1rem;
+    }
+}

@@ -5,10 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vs COmputer</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
     <main>
-        <h1>TIC TAC TOE</h1>
+        <h1 id="name">TIC TAC TOE</h1>
         <div class="container">
             <div class="board">
                 <button id="box" class="clickable"></button>
@@ -23,7 +24,7 @@
             </div>
         </div>
         <p class="showWinner hide"></p>
-        <div class="scoreBoard ">
+        <div class="scoreBoard">
             <div class="score">
                 <p class="user1Score hide"></p>
                 <p id="user1Name"></p>
@@ -33,13 +34,21 @@
                 <p id="user2Name"></p>
             </div>
         </div>
-        <div class="buttons">
+        <div class="buttons vsComputerButton">
             <button id="newGame" class="clickable">Clear Board</button>
             <button id="reset" class="clickable">Reset Game</button>
-            <button id="mainPage" onclick="location.href ='index.html'" class="clickable" >Home</button>
+            <button id="mainPage" onclick="location.href ='index.html'" class="clickable" ><i class="fa-solid fa-house"></i> Home</button>
         </div>
     </main>
-
+    
+    <footer>
+        <div class="footerPanel footerHide">
+            <div class="madeBy">Made by Tanuj Narula</div>
+            <div class="footerAnchor"><a href="https://www.linkedin.com/in/tanuj-narula" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedIn</a></div>
+            <div class="footerAnchor"><a href="https://github.com/Tanuj-Narula" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+    </footer>
+    
     <script src="vsComputer.js"></script>
 </body>
 </html>

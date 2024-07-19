@@ -1,4 +1,4 @@
-let player1Name, computerName = "Computer";
+let player1Name, computerName = "COMPUTER";
 let player1win = 0;
 let computerWin = 0; 
 const player1Symbol = "O";
@@ -100,8 +100,8 @@ function updateWinner(winner) {
     player1Score.classList.remove("hide");
     computerScore.classList.remove("hide");
     result.classList.remove("hide");
-    result.innerText = `${winner} wins!`;
-    result.style.backgroundColor = "#058C42";
+    result.innerText = `${winner} WINS!`;
+    result.style.backgroundColor = "#089c4b";
     result.style.color = "black";
     setScore();
     disableBox();
@@ -110,7 +110,7 @@ function updateWinner(winner) {
 function draw() {
     result.classList.remove("hide");
     result.innerText = "Game Tied!";
-    result.style.backgroundColor = "#3D0814";
+    result.style.backgroundColor = "#7e0e28";
     result.style.color = "whitesmoke";
     disableBox();
 }
