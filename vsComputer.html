@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vs COmputer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>TIC TAC TOE</h1>
+        <div class="container">
+            <div class="board">
+                <button id="box" class="clickable"></button>
+                <button id="box" class="clickable"></button>
+                <button id="box" class="clickable"></button>
+                <button id="box" class="clickable"></button>
+                <button id="box" class="clickable"></button>
+                <button id="box" class="clickable"></button>
+                <button id="box" class="clickable"></button>
+                <button id="box" class="clickable"></button>
+                <button id="box" class="clickable"></button> 
+            </div>
+        </div>
+        <p class="showWinner hide"></p>
+        <div class="scoreBoard ">
+            <div class="score">
+                <p class="user1Score hide"></p>
+                <p id="user1Name"></p>
+            </div>
+            <div class="score">
+                <p class="user2Score hide"></p>
+                <p id="user2Name"></p>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="newGame" class="clickable">Clear Board</button>
+            <button id="reset" class="clickable">Reset Game</button>
+            <button id="mainPage" onclick="location.href ='index.html'" class="clickable" >Home</button>
+        </div>
+    </main>
+
+    <script src="vsComputer.js"></script>
+</body>
+</html>

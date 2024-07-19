@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FF9B71;
+    text-align: center;
+}
+
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+.mainContainer{
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    text-align: center;
+}
+
+.imagesContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12rem;
+}
+
+.Image{
+    height: 200px;
+    width: 200px; 
+    display: inline-block;
+}
+
+.playerVsPlayer{
+    background-image: url("playerVsPlayer.png");
+    background-size: contain;
+}
+
+.vsComputer{
+    background-image: url("versus.png");
+    background-size: contain;
+}
+
+.container {
+    height: 67vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.board{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    gap: 1.5vmin;
+}
+
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFD82;
+    color: #3B413C;
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    font-size: 8vmin;
+    font-weight:lighter;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+}
+#box:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0.5rem 0.5rem 0.4rem rgba(0, 0, 0, 0.747);
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+    margin-top: 1rem;
+}
+
+.clickable{
+    background-color: #C9DDFF;
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+}
+
+.clickable:hover{
+    cursor: pointer;
+    transform: scale(1.02);
+    box-shadow: 0rem 0rem 0.4rem 0.2rem rgba(0, 0, 0, 0.747);
+}
+
+.buttons a{
+    text-decoration: none;
+    color: black;
+}
+
+.showWinner{
+    border-radius: 0.5rem;
+    display: inline;
+    font-size: 4.5vmin;
+    font-weight:500;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    padding: 0.5rem;
+}
+
+.scoreBoard{
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    gap: 1rem;
+    column-gap: 10rem;
+    font-size: 1.5rem;
+    font-weight:500;
+}
+
+.hide{
+    display: none;
+}
+
