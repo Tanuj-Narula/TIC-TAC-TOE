@@ -49,11 +49,13 @@ body:hover{
 .playerVsPlayer{
     background-image: url("playerVsPlayer.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .vsComputer{
     background-image: url("versus.png");
     background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .container {
@@ -95,10 +97,9 @@ body:hover{
 
 .buttons{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 10rem;
-    /* margin-top: 0.5rem; */
+    margin-top: 0.5rem;
 }
 
 .clickable{
@@ -138,9 +139,10 @@ body:hover{
     align-items: center ;
     gap: 1rem;
     column-gap: 10rem;
+}
+.score{
     font-size: 1.6rem;
 }
-
 .hide{
     display: none;
 }
@@ -187,7 +189,8 @@ body:hover{
 
     }
     .imagesContainer {
-        gap: 5rem;
+        width: 90%;
+        gap: 3rem;
     }
     .Image {
         width: 7rem;
@@ -196,7 +199,7 @@ body:hover{
     }
     .gameMode {
         width: 90%;
-        gap: 5rem;
+        gap: 3rem;
     }
     .gameModeButton {
         padding: 0.5rem;
@@ -216,25 +219,28 @@ body:hover{
         font-size: 15vmin;
     }
     .showWinner{
-        font-size: 8vmin;
+        font-size: 1.5rem;
     }
     .scoreBoard{
         column-gap: 5rem;
-        margin-top: 1.5rem;
+        margin-top: 1rem;
+    }
+    .score{
+        font-size: 1rem;
     }
     .playerVsPlayerButton {
-        column-gap: 1.3rem ;
-        margin-top: 1.5rem ;
+        column-gap: 0.8rem ;
+        margin-top: 1rem ;
     }
     .playerVsPlayerButton button{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .vsComputerButton{
-        column-gap: 1.3rem ;
-        margin-top: 1.5rem ;
+        column-gap: 0.8rem ;
+        margin-top: 1rem ;
     }
     .vsComputerButton button{
-        font-size: 1rem;
+        font-size: 0.8rem;
     }
     .footerHide{
         height: 8vh;
