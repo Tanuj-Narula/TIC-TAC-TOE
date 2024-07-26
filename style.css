@@ -33,6 +33,10 @@ body:hover{
     text-align: center;
 }
 
+.gameMode{
+    gap:10rem;
+}
+
 .imagesContainer {
     display: flex;
     justify-content: center;
@@ -201,7 +205,7 @@ body:hover{
         width: 90%;
         gap: 3rem;
     }
-    .gameModeButton {
+    .gameModeButton{
         padding: 0.5rem;
         font-size: 1rem;
     }
